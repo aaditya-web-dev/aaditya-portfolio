@@ -5,12 +5,12 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Jack - personal portfolio</title>
+  <title>Aaditya Pandey - personal portfolio</title>
 
   <!-- 
     - favicon
   -->
-  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+  <!-- <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml"> -->
 
   <!-- 
     - custom css link
@@ -37,15 +37,15 @@
     <div class="container">
 
       <h1 class="h1 logo">
-        <a href="#">Jack<span>.</span></a>
+        <a href="#">Aaditya Pandey<span>.</span></a>
       </h1>
 
       <div class="navbar-actions">
 
-        <select name="language" id="lang">
+        <!-- <select name="language" id="lang">
           <option value="en">En</option>
           <option value="ar">Ar</option>
-        </select>
+        </select> -->
 
         <button class="theme-btn" aria-label="Change Theme" title="Change Theme" data-theme-btn>
           <span class="icon"></span>
@@ -71,11 +71,15 @@
           </li>
 
           <li>
+            <a href="#education" class="navbar-link">Education.</a>
+          </li>
+
+          <li>
             <a href="#skills" class="navbar-link">Skills.</a>
           </li>
 
           <li>
-            <a href="#portfolio" class="navbar-link">Portfolio.</a>
+            <a href="#portfolio" class="navbar-link">Projects.</a>
           </li>
 
           <li>
@@ -100,28 +104,43 @@
       -->
 
       <section class="hero" id="home">
+        
+        <h2 class="h2 hero-title">Hi , I'm <b>Aaditya Pandey</b> 
+          
+        </h2>
 
         <figure class="hero-banner">
-
-          <picture>
-            <source srcset="./assets/images/hero-banner.png" media="(min-width: 768px)">
-            <source srcset="./assets/images/hero-banner-md.png" media="(min-width: 500px)">
-            <img src="./assets/images/hero-banner-sm.png" alt="A man in a blue shirt with a happy expression"
-              class="w-100">
-          </picture>
-
+          <div class="hero-image-container">
+            <picture>
+              <!-- <source srcset="./assets/images/me.png"
+                media="(min-width: 768px)">
+              <source srcset="./assets/images/me.png"
+                media="(min-width: 500px)"> -->
+              <img src="./assets/images/me.png"
+                alt="A man in a blue shirt with a happy expression">
+            </picture>
+          </div>
         </figure>
 
         <div class="hero-content">
 
-          <h2 class="h2 hero-title">We Design & Build Creative Products</h2>
+          <h2 class="h2 hero-title">
+            <span id="typed" class="typed-text"></span>
+          </h2>
 
           <a href="#contact" class="btn btn-primary">Get in touch</a>
 
         </div>
 
         <ul class="hero-social-list">
+          
+          <li>
+            <a href="https://www.linkedin.com/in/aaditya-pandey-124347290/" class="hero-social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
 
+              <div class="tooltip">Linkedin</div>
+            </a>
+          </li>
           <li>
             <a href="#" class="hero-social-link">
               <ion-icon name="logo-facebook"></ion-icon>
@@ -138,17 +157,10 @@
             </a>
           </li>
 
-          <li>
-            <a href="#" class="hero-social-link">
-              <ion-icon name="logo-linkedin"></ion-icon>
-
-              <div class="tooltip">Linkedin</div>
-            </a>
-          </li>
 
         </ul>
 
-        <a href="#stats" class="scroll-down">Scroll</a>
+        <a href="#about" class="scroll-down">Scroll</a>
 
       </section>
 
@@ -159,7 +171,7 @@
       <!-- 
         - #STATS
       -->
-
+<!-- 
       <section class="stats" id="stats">
         <ul class="stats-list">
 
@@ -212,7 +224,7 @@
           </li>
 
         </ul>
-      </section>
+      </section> -->
 
 
 
@@ -225,7 +237,7 @@
       <section class="about" id="about">
 
         <figure class="about-banner">
-          <img src="./assets/images/about-banner.png" alt="A man in a alice blue shirt with a thinking expression"
+          <img src="./assets/images/web.avif" alt="A man in a alice blue shirt with a thinking expression"
             class="w-100">
         </figure>
 
@@ -233,25 +245,72 @@
 
           <p class="section-subtitle">About me</p>
 
-          <h2 class="h3 section-title">Need a Creative Product? I can Help You!</h2>
+          <h2 class="h3 section-title">Aspiring Web Developer</h2>
 
           <p class="section-text">
-            Hi! I’m Jack Reacher, and I’m a developer who has passion for building clean web applications with intuitive
-            functionalities. I enjoy the process of turning ideas into reality using creative solutions. I’m always
-            curious about
-            learning new skills, tools, and concepts. In addition to working on various solo full stack projects, I have
-            worked with
-            creative teams, which involves daily stand-ups and communications, source control, and project management.
+            Hi! I'm Aaditya Pandey, a passionate and motivated web developer with a strong foundation in <b>Python Django</b>.
+            <br>
+            I'm always curious to learn new tools, explore creative solutions, and grow as a developer. Whether it's working independently or collaborating with a team, I'm eager to contribute, learn, and build something meaningful.
+            <br>If you're looking for a fresh mind with a strong drive to learn and grow—I'm ready to get started!
+
+
+
+
           </p>
 
           <div class="btn-group">
-            <button class="btn btn-secondary">Hire me</button>
+            <button class="btn btn-secondary" ><a href="#contact">Hire ME</a></button>
 
-            <button class="btn btn-primary">Download cv</button>
+            <button class="btn btn-primary"><a href="https://drive.google.com/file/d/1FT4-rd72rHH7omAKubCAoqBAOL8TIxWA/view?usp=sharing">Download Resume</a></button>
           </div>
 
         </div>
 
+      </section>
+
+
+
+
+
+      <!-- 
+        - #EDUCATION (Timeline Style)
+      -->
+      <section class="education" id="education">
+        <div class="education-content section-content">
+          <p class="section-subtitle">Education</p>
+          <h2 class="h3 section-title">Education Background</h2>
+        </div>
+        <div class="timeline">
+          <div class="timeline-item left">
+            <div class="timeline-content">
+              <h3 class="education-title">Banarsidas Chandiwala Institute of Information Technology (GGSIPU) Govindpuri,Delhi</h3>
+              <p class="education-degree"><b>BCA (Bachelor of Computer Application)</b></p>
+              <p class="education-year"><strong>Year:</strong><b> 2022 - 2025</b></p>
+              <p class="education-grade"><b>CGPA: 8.9</b></p>
+              <h4 class="education-learned-title">What I Have Learned</h4>
+              <ul class="education-details">
+                <li>Created Projects using Django and Django REST Framework</li>
+                <li>Learnt various Programming languages</li>
+                <li>Learnt various concepts of Web development</li>
+              </ul>
+            </div>
+          </div>
+          <div class="timeline-item right">
+            <div class="timeline-content">
+              <h3 class="education-title">Geeta Bal Bharti SR Sec School Rajgarh Colony, Delhi-110031</h3>
+              <p class="education-degree">Stream: Science</p>
+              <p class="education-year"><strong>Year:</strong> <b>2021 - 2022</b></p>
+              <p class="education-grade"><b>Percentage: 75.2%</b></p>
+              <h4 class="education-learned-title">What I Have Learned</h4>
+              <ul class="education-details">
+                <li>Learnt Python Programming</li>
+                <li>Used MySQL as Database</li>
+                <li>Build Menu Driven Program</li>
+                <li>Visualized data in the form of Pie Chart, Bar Graph</li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </section>
 
 
@@ -308,102 +367,65 @@
               </div>
             </li>
 
-            <li>
-              <div class="skill-card">
-                <div class="tooltip">JavaScript</div>
-
-                <div class="card-icon">
-                  <img src="./assets/images/javascript.png" alt="JavaScript logo">
-                </div>
-              </div>
-            </li>
-
-            <li>
-              <div class="skill-card">
-                <div class="tooltip">TypeScript</div>
-
-                <div class="card-icon">
-                  <img src="./assets/images/typescript.png" alt="TypeScript logo">
-                </div>
-              </div>
-            </li>
-
-            <li>
-              <div class="skill-card">
-                <div class="tooltip">jQuery</div>
-
-                <div class="card-icon">
-                  <img src="./assets/images/jquery.png" alt="jQuery logo">
-                </div>
-              </div>
-            </li>
-
+            
+            
             <li>
               <div class="skill-card">
                 <div class="tooltip">Bootstrap</div>
-
+                
                 <div class="card-icon">
                   <img src="./assets/images/bootstrap.png" alt="Bootstrap logo">
                 </div>
               </div>
             </li>
-
+            
             <li>
               <div class="skill-card">
-                <div class="tooltip">Angular</div>
+                <div class="tooltip">Python</div>
 
                 <div class="card-icon">
-                  <img src="./assets/images/angular.png" alt="Angular logo">
+                  <img src="./assets/images/python.png" alt="Python logo" height="48px" width="48px">
                 </div>
               </div>
             </li>
 
             <li>
               <div class="skill-card">
-                <div class="tooltip">React</div>
+                <div class="tooltip">DJANGO</div>
 
                 <div class="card-icon">
-                  <img src="./assets/images/react.png" alt="React logo">
+                  <img src="./assets/images/django.png" alt="django logo" height="48px" width="48px">
                 </div>
               </div>
             </li>
 
             <li>
               <div class="skill-card">
-                <div class="tooltip">Vue</div>
+                <div class="tooltip">Sqlite</div>
 
                 <div class="card-icon">
-                  <img src="./assets/images/vue.png" alt="Vue logo">
+                  <img src="./assets/images/sqlite.png" alt="sqlite logo" height="48px" width="48px">
+
                 </div>
               </div>
             </li>
 
             <li>
               <div class="skill-card">
-                <div class="tooltip">Firebase</div>
+                <div class="tooltip">MYSQL</div>
 
                 <div class="card-icon">
-                  <img src="./assets/images/firebase.png" alt="Firebase logo">
+                  <img src="./assets/images/mysql.png" alt="mysql logo" height="48px" width="48px">
                 </div>
               </div>
             </li>
 
             <li>
               <div class="skill-card">
-                <div class="tooltip">PugJs</div>
+                <div class="tooltip">Django Rest Framework</div>
 
                 <div class="card-icon">
-                  <img src="./assets/images/pugjs.png" alt="PugJs logo">
-                </div>
-              </div>
-            </li>
-
-            <li>
-              <div class="skill-card">
-                <div class="tooltip">SASS</div>
-
-                <div class="card-icon">
-                  <img src="./assets/images/sass.png" alt="SASS logo">
+                  <img src="./assets/images/dj-rest.png" alt="Django Rest Framework logo" height="48px" width="48px">
                 </div>
               </div>
             </li>
@@ -412,36 +434,7 @@
 
           <ul class="tools-list">
 
-            <li>
-              <div class="skill-card">
-                <div class="tooltip">Ajax</div>
-
-                <div class="card-icon">
-                  <img src="./assets/images/ajax.png" alt="Ajax logo">
-                </div>
-              </div>
-            </li>
-
-            <li>
-              <div class="skill-card">
-                <div class="tooltip">Gulp</div>
-
-                <div class="card-icon">
-                  <img src="./assets/images/gulp.png" alt="Gulp logo">
-                </div>
-              </div>
-            </li>
-
-            <li>
-              <div class="skill-card">
-                <div class="tooltip">Webpack</div>
-
-                <div class="card-icon">
-                  <img src="./assets/images/webpack.png" alt="Webpack logo">
-                </div>
-              </div>
-            </li>
-
+            
             <li>
               <div class="skill-card">
                 <div class="tooltip">Git</div>
@@ -451,17 +444,17 @@
                 </div>
               </div>
             </li>
-
+            
             <li>
               <div class="skill-card">
-                <div class="tooltip">Npm</div>
+                <div class="tooltip">Github</div>
 
                 <div class="card-icon">
-                  <img src="./assets/images/npm.png" alt="Npm logo">
+                  <img src="./assets/images/github.png" alt="github logo" height="48px" width="48px">
                 </div>
               </div>
             </li>
-
+            
             <li>
               <div class="skill-card">
                 <div class="tooltip">Command Line</div>
@@ -482,55 +475,18 @@
               </div>
             </li>
 
+
             <li>
               <div class="skill-card">
-                <div class="tooltip">Trello</div>
+                <div class="tooltip">Cursor AI</div>
 
                 <div class="card-icon">
-                  <img src="./assets/images/trello.png" alt="Trello logo">
+                  <img src="./assets/images/cursor.jpeg" alt="ClickUp logo" height="48px" width="48px">
                 </div>
               </div>
             </li>
 
-            <li>
-              <div class="skill-card">
-                <div class="tooltip">ClickUp</div>
-
-                <div class="card-icon">
-                  <img src="./assets/images/clickup.png" alt="ClickUp logo">
-                </div>
-              </div>
-            </li>
-
-            <li>
-              <div class="skill-card">
-                <div class="tooltip">Slack</div>
-
-                <div class="card-icon">
-                  <img src="./assets/images/slack.png" alt="Slack logo">
-                </div>
-              </div>
-            </li>
-
-            <li>
-              <div class="skill-card">
-                <div class="tooltip">Photoshop</div>
-
-                <div class="card-icon">
-                  <img src="./assets/images/photoshop.png" alt="Photoshop logo">
-                </div>
-              </div>
-            </li>
-
-            <li>
-              <div class="skill-card">
-                <div class="tooltip">Adobe XD</div>
-
-                <div class="card-icon">
-                  <img src="./assets/images/adobe-xd.png" alt="Adobe XD logo">
-                </div>
-              </div>
-            </li>
+            
 
           </ul>
 
@@ -547,148 +503,70 @@
       -->
 
       <section class="project" id="portfolio">
-
+        <div class="project-content section-content">
+          <p class="section-subtitle">My Projects</p>
+          <h2 class="h3 section-title">Featured Projects</h2>
+          <p class="section-text">
+            Here are some of the projects I've worked on. Each project showcases my skills and passion for web development.
+          </p>
+        </div>
         <ul class="project-list">
-
           <li>
-            <div class="project-content section-content">
+            <div class="project-card">
+              <figure class="card-banner">
+                <img src="./assets/images/collgeportal.png" class="w-100" alt="collegeportal">
+                <figcaption class="card-title-overlay">College Portal</figcaption>
+                <!-- Hover GitHub icon (hidden by default, shown on hover) -->
 
-              <p class="section-subtitle">My Works</p>
-
-              <h2 class="h3 section-title">See My Works Which Will Amaze You!</h2>
-
-              <p class="section-text">
-                We develop the best quality website that serves for the long-term. Well-documented, clean, easy and
-                elegant interface
-                helps any non-technical clients.
-              </p>
-
+              </figure>
+              <div class="card-description">
+                This repository contains a college portal website build using Django a Python web framework in college
+              </div>
+              <!-- Bottom GitHub icon (always visible) -->
+              <div class="card-github-bottom">
+                <a href="https://github.com/aaditya-web-dev/collage-portal.git" class="github-bottom-link" title="View on GitHub" target="_blank">
+                  <img src="./assets/images/github.png" alt="GitHub" class="github-logo-bottom">
+                </a>
+              </div>
             </div>
           </li>
-
           <li>
-            <a href="#" class="project-card">
-
+            <div class="project-card">
               <figure class="card-banner">
-                <img src="./assets/images/project-1.png" class="w-100" alt="A macintosh on a yellow background.">
+                <img src="./assets/images/collegemanagemnt.webp" class="w-100" alt="CMS">
+                <figcaption class="card-title-overlay">College Management System</figcaption>
               </figure>
-
-              <div class="card-content">
-                <h3 class="h4 card-title">Lorem Ipsum Dolor 01</h3>
-
-                <time class="publish-date" datetime="2022-04">April 2022</time>
+              <div class="card-description">
+                This project Develop using Django Python web framework. The
+                system aims to automate the process of recording , managing attendance ,Marks,assignment data for individuals within an organization. 
               </div>
-
-            </a>
+              <div class="card-github-bottom">
+                <a href="https://github.com/aaditya-web-dev/college_management_system.git" class="github-bottom-link" title="View on GitHub" target="_blank">
+                  <img src="./assets/images/github.png" alt="GitHub" class="github-logo-bottom">
+                </a>
+              </div>
+            </div>
           </li>
-
           <li>
-            <a href="#" class="project-card">
-
+            <div class="project-card">
               <figure class="card-banner">
-                <img src="./assets/images/project-2.png" class="w-100" alt="On a Blue background, a Wacom and a mouse.">
+                <img src="./assets/images/portfolio.png" class="w-100" alt="portfolio">
+                <figcaption class="card-title-overlay">Portfolio Website</figcaption>
+                <a href="#" class="github-link" title="View on GitHub" target="_blank">
+                  <img src="./assets/images/github.png" alt="GitHub" class="github-logo">
+                </a>
               </figure>
-
-              <div class="card-content">
-                <h3 class="h4 card-title">Lorem Ipsum Dolor 02</h3>
-
-                <time class="publish-date" datetime="2022-04">April 2022</time>
+              <div class="card-description">
+                A modern, responsive personal portfolio website designed to showcase my skills, education, and projects. Built with HTML, CSS, and JavaScript      </div>
+              <div class="card-github-bottom">
+                <a href="#" class="github-bottom-link" title="View on GitHub" target="_blank">
+                  <img src="./assets/images/github.png" alt="GitHub" class="github-logo-bottom">
+                </a>
               </div>
-
-            </a>
+            </div>
           </li>
-
-          <li>
-            <a href="#" class="project-card">
-
-              <figure class="card-banner">
-                <img src="./assets/images/project-3.png" class="w-100"
-                  alt="A Cassette tape on a mellow apricot background.">
-              </figure>
-
-              <div class="card-content">
-                <h3 class="h4 card-title">Lorem Ipsum Dolor 03</h3>
-
-                <time class="publish-date" datetime="2022-04">April 2022</time>
-              </div>
-
-            </a>
-          </li>
-
-          <li>
-            <a href="#" class="project-card">
-
-              <figure class="card-banner">
-                <img src="./assets/images/project-4.png" class="w-100"
-                  alt="Blue digital watch on a dark liver background.">
-              </figure>
-
-              <div class="card-content">
-                <h3 class="h4 card-title">Lorem Ipsum Dolor 04</h3>
-
-                <time class="publish-date" datetime="2022-04">April 2022</time>
-              </div>
-
-            </a>
-          </li>
-
-          <li>
-            <a href="#" class="project-card">
-
-              <figure class="card-banner">
-                <img src="./assets/images/project-5.png" class="w-100"
-                  alt="On a dark liver background, Airport luggage car carrying a luggage.">
-              </figure>
-
-              <div class="card-content">
-                <h3 class="h4 card-title">Lorem Ipsum Dolor 05</h3>
-
-                <time class="publish-date" datetime="2022-04">April 2022</time>
-              </div>
-
-            </a>
-          </li>
-
-          <li>
-            <a href="#" class="project-card">
-
-              <figure class="card-banner">
-                <img src="./assets/images/project-6.png" class="w-100"
-                  alt="On a yellow background, a digital watch and a glass.">
-              </figure>
-
-              <div class="card-content">
-                <h3 class="h4 card-title">Lorem Ipsum Dolor 06</h3>
-
-                <time class="publish-date" datetime="2022-04">April 2022</time>
-              </div>
-
-            </a>
-          </li>
-
-          <li>
-            <a href="#" class="project-card">
-
-              <figure class="card-banner">
-                <img src="./assets/images/project-7.png" class="w-100"
-                  alt="A fujifilm instant camera on a dark electric blue background.">
-              </figure>
-
-              <div class="card-content">
-                <h3 class="h4 card-title">Lorem Ipsum Dolor 07</h3>
-
-                <time class="publish-date" datetime="2022-04">April 2022</time>
-              </div>
-
-            </a>
-          </li>
-
-          <li>
-            <button class="load-more">Load more work</button>
-          </li>
-
+          <!-- Add more projects as needed -->
         </ul>
-
       </section>
 
 
@@ -708,26 +586,11 @@
           <h2 class="h3 section-title">Have You Any Project? Please Drop a Message</h2>
 
           <p class="section-text">
-            Get in touch and let me know how i can help. Fill out the form and i’ll be in touch as soon as possible.
+            Get in touch and let me know how i can help. Fill out the form and i'll be in touch as soon as possible.
           </p>
 
           <ul class="contact-list">
 
-            <li class="contact-list-item">
-
-              <div class="contact-item-icon">
-                <ion-icon name="location-outline"></ion-icon>
-              </div>
-
-              <div class="wrapper">
-                <h3 class="h4 contact-item-title">Address:</h3>
-
-                <address class="contact-info">
-                  941 Saqrqorish Road, alandalos, grnata, wa 47122-4194
-                </address>
-              </div>
-
-            </li>
 
             <li class="contact-list-item">
 
@@ -738,9 +601,8 @@
               <div class="wrapper">
                 <h3 class="h4 contact-item-title">Phone:</h3>
 
-                <a href="tel:01234567789" class="contact-info">(01) 234 567 789</a>
+                <a href="tel:9654492742" class="contact-info">(+91) 9654492742</a>
 
-                <a href="tel:09765432200" class="contact-info">(09) 765 432 200</a>
               </div>
 
             </li>
@@ -754,16 +616,23 @@
               <div class="wrapper">
                 <h3 class="h4 contact-item-title">Email:</h3>
 
-                <a href="mailto:info@jack.com" class="contact-info">info@jack.com</a>
+                <a href="mailto:pandeyaaditya013@gmail.com" class="contact-info">pandeyaaditya013@gmail.com</a>
 
-                <a href="mailto:support@jack.com" class="contact-info">support@jack.com</a>
+                
               </div>
 
             </li>
 
             <li>
               <ul class="contac-social-list">
+                
+                <li>
+                  <a href="https://www.linkedin.com/in/aaditya-pandey-124347290/" class="contact-social-link">
+                    <div class="tooltip">Linkedin</div>
 
+                    <ion-icon name="logo-linkedin"></ion-icon>
+                  </a>
+                </li>
                 <li>
                   <a href="#" class="contact-social-link">
                     <div class="tooltip">Facebook</div>
@@ -780,13 +649,6 @@
                   </a>
                 </li>
 
-                <li>
-                  <a href="#" class="contact-social-link">
-                    <div class="tooltip">Linkedin</div>
-
-                    <ion-icon name="logo-linkedin"></ion-icon>
-                  </a>
-                </li>
 
                 <li>
                   <a href="#" class="contact-social-link">
@@ -803,68 +665,36 @@
 
         </div>
 
-        <form action="" class="contact-form">
-
+        <form action="https://formcarry.com/s/oCgr1o9542d" method="POST" class="contact-form" accept-charset="UTF-8">
           <div class="form-wrapper">
-
             <label for="name" class="form-label">Name</label>
-
             <div class="input-wrapper">
-
-              <input type="text" name="name" id="name" required placeholder="e.g John Doe" class="input-field">
-
+              <input type="text" name="name" id="name" required placeholder="e.g Aaditya pandey" class="input-field">
               <ion-icon name="person-circle"></ion-icon>
-
             </div>
-
           </div>
-
           <div class="form-wrapper">
-
             <label for="email" class="form-label">Email</label>
-
             <div class="input-wrapper">
-
-              <input type="email" name="email" id="email" required placeholder="e.g johndoe@mail.com"
-                class="input-field">
-
+              <input type="email" name="email" id="email" required placeholder="e.g pandey@mail.com" class="input-field">
               <ion-icon name="mail"></ion-icon>
-
             </div>
-
           </div>
-
           <div class="form-wrapper">
-
             <label for="phone" class="form-label">Phone</label>
-
             <div class="input-wrapper">
-
               <input type="tel" name="phone" id="phone" required placeholder="Phone Number" class="input-field">
-
               <ion-icon name="call"></ion-icon>
-
             </div>
-
           </div>
-
           <div class="form-wrapper">
-
             <label for="message" class="form-label">Message</label>
-
             <div class="input-wrapper">
-
-              <textarea name="message" id="message" required placeholder="Write message..."
-                class="input-field"></textarea>
-
+              <textarea name="message" id="message" required placeholder="Write message..." class="input-field"></textarea>
               <ion-icon name="chatbubbles"></ion-icon>
-
             </div>
-
           </div>
-
           <button type="submit" class="btn btn-primary">Send</button>
-
         </form>
 
       </section>
@@ -885,12 +715,12 @@
 
       <p class="h1 logo">
         <a href="#">
-          Jack<span>.</span>
+        Aaditya Pandey<span>.</span>
         </a>
       </p>
 
       <p class="copyright">
-        &copy; 2022 <a href="#">codewithsadee</a>. All rights reserved
+        &copy; 2025 <a href="#">codewithaaditya</a>. All rights reserved
       </p>
 
     </div>
@@ -922,6 +752,21 @@
   -->
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+  <!-- Typed.js CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var typed = new Typed('#typed', {
+        strings: ['a developer', ' a fast learner'],
+        typeSpeed: 60,
+        backSpeed: 40,
+        backDelay: 1200,
+        loop: true
+      });
+    });
+  </script>
 
 </body>
 
